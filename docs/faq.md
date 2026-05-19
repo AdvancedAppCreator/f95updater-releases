@@ -25,12 +25,32 @@ Two possibilities:
 
 1. **The folder is actually still on disk.** Open the row → tap the storage
    path's folder icon to verify in your file manager.
-2. **The folder is gone but the `.joiback` snapshot still lists it.** Fixed
-   since v0.28.10 — on every launch, the app walks the backup list and
-   checks folder existence. Missing ones are auto-marked deleted. Force a
-   relaunch if it hasn't kicked in yet.
+2. **The folder is gone but the `.joiback` snapshot still lists it.** On every
+   launch the app walks the backup list and checks folder existence. Missing
+   ones are auto-marked deleted. Force a relaunch if it hasn't kicked in yet.
 
 If neither applies, see [Delete a JoiPlay game](joiplay/delete-game.md).
+
+### Special case: ghost JoiPlay row right after importing a backup
+
+If you do a fresh install, import a backup that contains a JoiPlay snapshot,
+and you see a row for a game whose folder is no longer on disk, that row may
+*persist* until you either:
+
+- Tap the row's **🗑** icon — the delete handler treats a confirmed-missing
+  folder as success and removes the row, **or**
+- Open **Menu → JoiPlay → Set JoiPlay games folder…** and grant access to
+  the folder that contains your JoiPlay games. On the next app launch the
+  startup prune can definitively verify which folders are gone and will
+  auto-remove the orphans, **or**
+- Use the row's **Edit** dialog → **Hide** to remove it from the list manually.
+
+**Why does this happen?** Android 11+ removed the ability to check "does this
+folder exist" without a permission grant. We could distinguish "folder is
+missing" from "folder is here but we can't see it" via your previously
+granted folder picker, but on a fresh install that grant doesn't exist yet —
+so the app conservatively shows the row. Tapping delete or granting access
+once resolves it.
 
 ## "Delete failed — re-grant JoiPlay games folder"
 
