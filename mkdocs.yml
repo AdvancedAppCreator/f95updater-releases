@@ -1,0 +1,98 @@
+site_name: F95 Updater Help
+site_description: Help guide for the F95 Updater Android companion app.
+site_url: https://advancedappcreator.github.io/f95updater-releases/
+repo_url: https://github.com/AdvancedAppCreator/f95updater-releases
+repo_name: AdvancedAppCreator/f95updater-releases
+copyright: Help for the F95 Updater Android app
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AdvancedAppCreator/f95updater-releases
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Main screen tour: main-screen.md
+  - Mapping apps to F95:
+      - Auto-match: mapping/auto-match.md
+      - Manual search: mapping/manual-search.md
+      - Paste a thread URL: mapping/paste-url.md
+      - Mark "Not on F95": mapping/not-on-f95.md
+      - Change a wrong match: mapping/change-match.md
+  - Catalog:
+      - Sync catalog: catalog/sync.md
+      - Refresh from catalog: catalog/refresh.md
+      - Auto-hide non-games: catalog/auto-hide.md
+  - JoiPlay:
+      - Import .joiback backup: joiplay/import-backup.md
+      - Install game in JoiPlay: joiplay/install-game.md
+      - Set JoiPlay games folder: joiplay/set-folder.md
+      - Delete a JoiPlay game: joiplay/delete-game.md
+  - Backup & restore:
+      - Export & import backup: backup/export-import.md
+      - Auto-backups: backup/auto-backup.md
+      - App config drop-in: backup/app-config.md
+  - Diagnostics:
+      - Logs: diagnostics/logs.md
+      - Verbose mode: diagnostics/verbose.md
+      - Uploading logs: diagnostics/upload.md
+  - Self-update: self-update.md
+  - Troubleshooting / FAQ: faq.md
+  - Changelog: changelog.md
