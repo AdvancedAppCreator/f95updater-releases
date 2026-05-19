@@ -8,6 +8,17 @@ last_updated: 2026-05-18
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
 
+## v0.31.0
+
+- **Stripe donations** added alongside Buy Me a Coffee. The ☕ icon and menu
+  now open a chooser when both options are configured. See
+  [Support the project](support.md).
+
+## v0.30.0
+
+- **Help link** in the menu and About dialog pointing at the online docs
+  (this site).
+
 ## v0.29.0
 
 - **Donate URL** baked into the default app config — fresh installs now show

@@ -47,7 +47,8 @@ AppConfig: Auto-imported drop-in config from /storage/.../app_config.json
   "crashUploadBaseUrl": null,
   "crashUploadAuthQuery": null,
   "supportThreadUrl": "https://f95zone.to/threads/f95updater-android-companion-app.TBD/",
-  "donationUrl": "https://buymeacoffee.com/advancedappcreator"
+  "donationUrl": "https://buymeacoffee.com/advancedappcreator",
+  "stripeDonationUrl": "https://buy.stripe.com/14A7sM5zQgL0eGkbz02Z000"
 }
 ```
 

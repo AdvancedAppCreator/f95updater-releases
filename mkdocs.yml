@@ -94,5 +94,6 @@ nav:
       - Verbose mode: diagnostics/verbose.md
       - Uploading logs: diagnostics/upload.md
   - Self-update: self-update.md
+  - Support the project: support.md
   - Troubleshooting / FAQ: faq.md
   - Changelog: changelog.md
