@@ -1,12 +1,31 @@
 ---
 title: Changelog
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 ---
 
 # Changelog
 
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
+
+## v0.35.0
+
+- **Extract & install** flow added: pick a `.zip` / `.rar` / `.7z` (with optional
+  password) and the app extracts it locally, then opens a file browser so you
+  pick the launch file to send to JoiPlay. Progress dialog with cancel,
+  10 GB / 100× zip-bomb guards. See
+  [Install a game in JoiPlay](joiplay/install-game.md).
+- **JoiPlay settings** dialog: configure source folder, destination folder,
+  and storage strategy (SAF / Full storage / Ask each time).
+- "Don't show this again" option on the install-flow warning modal.
+
+## v0.34.x
+
+- v0.34.1 — Show home-screen (launcher) name in row title and expansion when
+  it differs from the app's manifest label.
+- v0.34.0 — Fix version-comparison: `0.4` is no longer treated as equivalent
+  to `0.4.7b`. Replaced "F95 latest" with "Installed version" in the row
+  expansion. Internal cleanup.
 
 ## v0.31.0
 
