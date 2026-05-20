@@ -1,6 +1,6 @@
 ---
 title: Auto-backups
-last_updated: 2026-05-18
+last_updated: 2026-05-20
 ---
 
 # Auto-backups
@@ -15,8 +15,7 @@ storage.
 - **First launch on every new version code.** Compared against a stored
   "last seen" value in DataStore. The snapshot is tagged with the
   **previous** version (the state you'd want to recover).
-- **Manually** via the **Snapshot now** button in the restore dialog (see
-  below).
+- **Manually** via the **Snapshot now** button in the restore dialog (see below).
 - **Before every restore.** When you restore one auto-backup, a fresh
   "prerestore" snapshot is taken first so you can roll back the rollback.
 
@@ -36,17 +35,13 @@ The 5 newest are kept. Older ones are pruned automatically.
 
 Menu → **Backup & config** → **Restore auto-backup…**.
 
-<!-- screenshot: auto-backup-list.png -->
-
 You'll see:
 
-- An entry per backup with **from version**, **date**, **size**, and the
-  filename.
+- An entry per backup with **from version**, **date**, **size**, and the filename.
 - **Restore** — opens a confirmation dialog. On confirm, the app takes a
   prerestore snapshot, applies the backup, and rescans.
 - **🗑** — delete a specific backup file.
-- **Snapshot now** — create a new backup right now (useful before risky
-  manual changes).
+- **Snapshot now** — create a new backup right now (useful before risky manual changes).
 - **Close** — leave the dialog.
 
 ## What gets replaced on restore
@@ -57,6 +52,5 @@ version overrides, and JoiPlay deleted-IDs are all replaced.
 
 Things **not** touched:
 
-- App config (`app_config.json`).
-- SAF permissions.
+- Permission grants.
 - The catalog file itself.

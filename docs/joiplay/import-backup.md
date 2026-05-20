@@ -1,6 +1,6 @@
 ---
 title: Import .joiback backup
-last_updated: 2026-05-18
+last_updated: 2026-05-20
 ---
 
 # Import a JoiPlay backup
@@ -13,10 +13,8 @@ without needing direct read access to the JoiPlay games folder.
 
 1. In JoiPlay: **Settings → Backup → Export backup**. Save the resulting
    `.joiback` somewhere accessible (Downloads is fine).
-2. In F95 Updater: menu → **JoiPlay** → **Import JoiPlay backup
-   (.joiback)…**.
-3. Pick the file. You'll see a snackbar: `Imported N games; matching to
-   catalog…`.
+2. In F95 Updater: **Menu → Install → Import JoiPlay backup (.joiback)…**.
+3. Pick the file. You'll see a snackbar: `Imported N games; matching to catalog…`.
 
 ## What gets imported
 
@@ -48,5 +46,5 @@ keep a copy of the previous JoiPlay snapshot so you can roll back.
 
 ## See also
 
-- [Set JoiPlay games folder](set-folder.md) — needed only if you want to
-  delete game folders from inside our app.
+- [JoiPlay settings](settings.md) — grant All-files access if you want to delete game folders from inside our app.
+- [Install game in JoiPlay](install-game.md) — add a new game by file/archive.

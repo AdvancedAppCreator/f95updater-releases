@@ -52,7 +52,7 @@ Below the top bar:
 
 - **Search box** – free-text filter over app names. Supports tag-search syntax
   like `myth tag:harem tag:incest` (matches names containing "myth" that have
-  both tags).
+  both tags). While typing `tag:<prefix>` you'll see **autocomplete chips** below the field — tap a chip to insert the full tag name.
 - **Status filter chips** – toggle rows by Update / Current / Unknown /
   Unmapped / Failed.
 - **Source filter** – Android only / JoiPlay only / Both.

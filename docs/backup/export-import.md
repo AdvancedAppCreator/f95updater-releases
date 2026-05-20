@@ -1,6 +1,6 @@
 ---
 title: Export & import backup
-last_updated: 2026-05-18
+last_updated: 2026-05-20
 ---
 
 # Export & import backup
@@ -14,8 +14,7 @@ file. Use it before reinstalling, switching phones, or experimenting.
   acknowledgedVersion, notOnF95 flag).
 - The **hidden** packages list.
 - A copy of the **JoiPlay games.json** from your last `.joiback` import.
-- A copy of the **JoiPlay metadata.json** (used as a version-conflict
-  fallback).
+- A copy of the **JoiPlay metadata.json** (used as a version-conflict fallback).
 - All **per-game version overrides** you set via the conflict dialog.
 
 ## Export
@@ -37,10 +36,7 @@ exports made by the PC-side bulk lookup tool.
 
 ## Not included
 
-- **SAF grant for the JoiPlay games folder** — re-grant via
-  [Set JoiPlay games folder](../joiplay/set-folder.md) after reinstall.
-- **App config (`app_config.json`)** — see
-  [App config drop-in](app-config.md).
+- **All-files access permission** — re-grant via **Menu → Install → JoiPlay settings…** after reinstall.
 
 ## See also
 

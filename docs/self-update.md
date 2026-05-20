@@ -1,17 +1,16 @@
 ---
 title: Self-update
-last_updated: 2026-05-18
+last_updated: 2026-05-20
 ---
 
 # Self-update
 
-The app can update itself in place by pulling a new APK from its configured
-`versionInfoUrl`. No Play Store needed.
+The app can update itself in place by pulling a new APK from GitHub Releases. No Play Store needed.
 
 ## How it works
 
-On every launch, the app fetches `version.json` from the URL in your app
-config (defaults to the `latest` GitHub release of `f95updater-releases`).
+On every launch, the app fetches `version.json` from
+`github.com/AdvancedAppCreator/f95updater-releases/releases/latest/download/version.json`.
 
 If `version.json` advertises a higher `versionCode` than the running app,
 you'll see an **"Update available"** dialog.
@@ -25,12 +24,9 @@ The dialog shows:
 - New version name + release notes.
 - **Download & install** button.
 
-Tapping it downloads the APK from the URL in `version.json` (or
-`apkUrlOverride` from your app config), then hands the file to Android's
+Tapping it downloads the APK from the URL in `version.json`, then hands the file to Android's
 package installer. You may need to grant "Install unknown apps" permission
 once.
-
-<!-- screenshot: self-update-dialog.png -->
 
 A progress bar updates during the download. After install, Android relaunches
 the app on the new version.
@@ -41,8 +37,3 @@ The app version code stored in `last_seen_version_code` is bumped after
 install. The next launch is the first one on the new version, and
 [Auto-backup](backup/auto-backup.md) kicks in to snapshot your state — so if
 the new version misbehaves, you can restore back.
-
-## Customizing the update source
-
-Edit `app_config.json` (see [App config](backup/app-config.md)) and change
-`versionInfoUrl` (and optionally `apkUrlOverride`) to point at your own host.
