@@ -82,17 +82,11 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
     Built-in updater checks GitHub Releases for new versions and offers a one-tap install.
 
--   :material-bug-outline:{ .lg .middle } **Diagnostics built-in**
-
-    ---
-
-    Save logs to Documents, toggle verbose logging, probe JoiPlay storage paths &mdash; everything you need to file a useful bug report.
-
 -   :material-shield-lock-outline:{ .lg .middle } **Your data stays yours**
 
     ---
 
-    No analytics SDKs. No ads. Crash uploads are opt-in and only if you configure an endpoint. Cover images load directly from F95's CDN &mdash; nothing is rehosted.
+    No analytics SDKs. No ads. Cover images load directly from F95's CDN &mdash; nothing is rehosted.
 
 </div>
 
@@ -136,13 +130,7 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
     ---
 
-    Export / import mapping state, auto-backups, app-config drop-in file.
-
--   :material-stethoscope:{ .lg .middle } **[Diagnostics](diagnostics/logs.md)**
-
-    ---
-
-    Save & upload logs, verbose mode &mdash; everything you need when something goes wrong.
+    Export / import mapping state, auto-backups.
 
 -   :material-help-circle-outline:{ .lg .middle } **[FAQ](faq.md)**
 
@@ -162,4 +150,4 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
 ## Reporting a problem
 
-Open the menu → **Help** → **Save logs to Documents** (or **Upload app logs** if you have an upload endpoint configured), then describe what you did. See the [Diagnostics page](diagnostics/logs.md) for details.
+If something looks off, capture screenshots and write down what you tapped, then open an issue or post in the [F95Zone support thread](https://github.com/AdvancedAppCreator/f95updater-releases/issues).
