@@ -1,67 +1,45 @@
 ---
 title: Install a game in JoiPlay
-last_updated: 2026-05-19
+last_updated: 2026-05-20
 ---
 
 # Install a game in JoiPlay
 
-Two paths, depending on whether your game is already extracted or still in a
-compressed archive.
+Menu → **Install ›** → **Install game in JoiPlay…**
 
-## Path A: Already-extracted game folder
+The app picker accepts both *launch files* and *archives* — pick whichever you have:
 
-Use this when the game is already unpacked on your phone (for example you used
-a file manager to unzip it yourself).
-
-1. Menu → **JoiPlay** → **Install game in JoiPlay…**
-2. On first use, a "heads up" dialog explains the flow. Tick **"Don't show this
-   again"** if you don't want to see it next time.
-3. Pick the game's launch file — `Game.exe` for RPG Maker, `index.html` for
-   HTML / Tyrano, `script.rpy` for Ren'Py, etc.
-4. JoiPlay opens its add-game dialog. Finish there.
-
-## Path B: Still in a compressed archive
-
-Use this when you have a `.zip`, `.rar`, or `.7z` file.
-
-1. Menu → **JoiPlay** → **Extract & install…**
-2. The same heads-up dialog appears the first time (shared with Path A).
-3. Pick the archive file.
-4. The app extracts it into the folder you've configured in **JoiPlay
-   settings** (see below). A progress dialog shows bytes processed; Cancel
-   removes the partial extraction.
-5. If the archive is password-protected, the app prompts for the password and
-   retries. Passwords are kept in memory only — never stored.
-6. After extraction, a file browser opens. The most likely launch file is
-   highlighted and pre-selected (e.g. `Game.exe`). Tap **Send to JoiPlay**, or
-   pick a different file.
-
-### What we won't do
-
-- **JoiPlay's library doesn't sync back to us** — neither path adds the game to
-  F95 Updater's list. You'll only see the new game in F95 Updater after you
-  re-export your JoiPlay backup and import the new `.joiback`. This is a
-  one-way information flow that's a JoiPlay limitation, not ours.
-- **No automatic re-extraction.** Once a game is extracted, it stays where it
-  is — re-running the flow on the same archive creates a fresh copy.
-- **Safety caps:** archives are rejected if they would expand past **10 GB** or
-  if any single file shows a >100× compression ratio (zip-bomb guard).
-
-## JoiPlay settings
-
-Menu → **JoiPlay** → **JoiPlay settings…** controls three things:
-
-| Setting | What it does |
+| What you pick | What happens |
 |---|---|
-| **Source folder** | Where the file picker opens when you pick an archive. Leave unset to start at Android's default. |
-| **Destination folder** | Where extracted games are saved. Each archive gets its own subfolder. Required for the **Extract & install** flow. |
-| **Storage strategy** | **SAF** (recommended): writes go through the Storage Access Framework using the folders above. **Full storage** (faster): requires Android's "All files access" permission. **Ask each time**: prompts for a destination on each extraction. |
+| `.exe`, `.sh`, `.py`, `.html`, `.swf`, `.jgp` | Sent straight to JoiPlay's add-game dialog. |
+| `.zip`, `.rar`, `.7z` | Extracted into your **Destination folder** first; then a file browser appears so you can pick the game's launch file inside. |
 
-Both folder pickers grant the app a persistent SAF tree URI; you only need to
-set them once per install.
+## First-time heads up
+
+The first time you use the install flow, a warning explains that JoiPlay will take over to actually register the game. Tick **"Don't show this again"** to skip the dialog next time (you can re-enable it from [JoiPlay settings](settings.md)).
+
+## During extraction
+
+- Progress shows both byte count and percentage, with a heartbeat that updates at least every 200 ms so the UI never appears frozen.
+- Password-protected archives prompt you for the password and retry. Passwords are kept in memory only — never stored.
+- A confirmation dialog appears before extraction, showing source path and destination. If the app has write access to the source archive, you'll see an optional **Delete the archive after a successful extraction** checkbox.
+- RAR5 is supported on arm64 devices (most modern phones); RAR4 works everywhere.
+- Safety caps: archives are rejected if they would expand past **10 GB** or if any single entry shows a >100× compression ratio (zip-bomb guard).
+
+## After extraction
+
+A file browser opens showing the extracted folder. The most likely launch file is highlighted (e.g. `Game.exe`, `script.rpy`, `index.html`). Tap **Send to JoiPlay**, or pick a different file.
+
+JoiPlay then opens its own add-game flow on top — finish there. The app passes JoiPlay the **raw filesystem path** of the file so JoiPlay can scan sibling files in the game folder.
+
+## What we won't do
+
+- **JoiPlay's library doesn't sync back to us.** The game won't appear in F95 Updater's list until you re-export your JoiPlay backup and import the new `.joiback` file.
+- **No automatic re-extraction.** Re-running the flow on the same archive produces a fresh copy in your destination folder.
 
 ## See also
 
-- [Import .joiback backup](import-backup.md) — how the game eventually shows
-  up in F95 Updater.
-- [Delete a JoiPlay game](delete-game.md).
+- [Install APK](install-apk.md) — the matching flow for plain Android `.apk` files.
+- [JoiPlay settings](settings.md) — configure source and destination folders.
+- [Import .joiback backup](import-backup.md) — how the game eventually shows up in F95 Updater.
+- [Delete a JoiPlay game](delete-game.md)

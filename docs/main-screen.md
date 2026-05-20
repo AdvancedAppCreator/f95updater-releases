@@ -44,7 +44,7 @@ From left to right:
 - **Title** – shows the app version, plus a small counter (`X of Y apps`).
 - **☕** – Buy me a coffee. Hidden if no donation URL is configured.
 - **🔄** – Refresh all (checks every mapped row against F95).
-- **⋮** – Main menu (catalog, JoiPlay, backup, diagnostics).
+- **⋮** – Main menu (Install, Catalog, Backup & config, Help).
 
 ## Filter & search
 

@@ -80,10 +80,11 @@ nav:
       - Sync catalog: catalog/sync.md
       - Refresh from catalog: catalog/refresh.md
       - Auto-hide non-games: catalog/auto-hide.md
-  - JoiPlay:
-      - Import .joiback backup: joiplay/import-backup.md
+  - JoiPlay & APK installs:
+      - Install APK: joiplay/install-apk.md
       - Install game in JoiPlay: joiplay/install-game.md
-      - Set JoiPlay games folder: joiplay/set-folder.md
+      - JoiPlay settings: joiplay/settings.md
+      - Import .joiback backup: joiplay/import-backup.md
       - Delete a JoiPlay game: joiplay/delete-game.md
   - Backup & restore:
       - Export & import backup: backup/export-import.md

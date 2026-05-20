@@ -1,6 +1,6 @@
 ---
 title: Changelog
-last_updated: 2026-05-19
+last_updated: 2026-05-20
 ---
 
 # Changelog
@@ -8,24 +8,59 @@ last_updated: 2026-05-19
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
 
-## v0.35.0
+## v0.42.0
 
-- **Extract & install** flow added: pick a `.zip` / `.rar` / `.7z` (with optional
-  password) and the app extracts it locally, then opens a file browser so you
-  pick the launch file to send to JoiPlay. Progress dialog with cancel,
-  10 GB / 100× zip-bomb guards. See
-  [Install a game in JoiPlay](joiplay/install-game.md).
-- **JoiPlay settings** dialog: configure source folder, destination folder,
-  and storage strategy (SAF / Full storage / Ask each time).
-- "Don't show this again" option on the install-flow warning modal.
+- **Catalog filters persist** across app restarts (status / engine / category / min-rating / installed-only / sort / search query).
+- **Tag autocomplete chips** appear below the catalog search field while typing `tag:<prefix>`; tap to insert the full tag.
+- Closing the catalog game-detail dialog no longer auto-focuses the search field (no more keyboard popping up unexpectedly).
+- **Auto-link after APK install** — newly installed apps are rescanned and matched against the catalog immediately, no manual Refresh needed.
+- File pickers remember the last folder you browsed; subsequent picks reopen at the same place.
+- **Menu reorganized**:
+    - New **Install** submenu (APK + game-in-JoiPlay + JoiPlay-backup + JoiPlay settings).
+    - **Help** submenu now contains documentation, about, support, and all diagnostics in one place.
+
+## v0.41.0
+
+- **RAR5 support** via vendored RARLAB unrar (arm64 devices). Tries native first; falls back to junrar (RAR4-only) on other architectures or when extracting via SAF.
+- APK gained ~900 KB for the native library.
+
+## v0.40.x
+
+- v0.40.1 — Catalog "Rating" sort now uses views as a tie-breaker so popular games rank above obscure ones with the same rating.
+- v0.40.0 — Catalog tab gains a **Refresh** button and "Updated Xh ago" subtitle in the top bar. Removed the now-obsolete "Extract & install" and "Set JoiPlay games folder" menu entries.
+
+## v0.39.0
+
+- **Install APK** flow: pick an `.apk` directly or pick an archive (zip/rar/7z) → app extracts → file browser highlights `.apk` candidates → system installer opens. Optional "Delete after install" checkbox verifies via Package Manager before deleting.
+- JoiPlay now receives raw `file://` URIs so it can scan game folders (fixes "path not found" after extract).
+- Extraction progress reports on a 200 ms heartbeat in addition to the byte threshold — no more 15 s freezes during slow flushes.
+- Extract confirm dialog gains an optional **Delete archive after extraction** checkbox.
+
+## v0.38.x
+
+- v0.38.2 — Confirm-before-extract dialog showing source/dest. Finer progress reporting. Better RAR5 error message (now historical — see v0.41 for full RAR5 support).
+- v0.38.1 — File-picker for "Install game in JoiPlay" now lists archives too; archives route through the extract flow.
+- v0.38.0 — Custom tree picker for the install flow (previously SAF-based).
+
+## v0.37.x
+
+- v0.37.1 — Removed obsolete "storage strategy" section; added **+ New folder** button in the tree picker.
+- v0.37.0 — Both source and destination pickers use a custom file-tree (works on devices where SAF refuses to grant the Downloads folder).
+
+## v0.36.x
+
+- v0.36.1 — Phase-labelled progress dialog (Preparing / Extracting).
+- v0.36.0 — Custom **folder picker** with lazy-expand tree, "Use this folder" + Cancel.
+
+## v0.35.x
+
+- v0.35.1 — Reactive permission status (red banner clears as soon as you grant access).
+- v0.35.0 — **Extract & install** flow (later folded into the standard Install in v0.39).
 
 ## v0.34.x
 
-- v0.34.1 — Show home-screen (launcher) name in row title and expansion when
-  it differs from the app's manifest label.
-- v0.34.0 — Fix version-comparison: `0.4` is no longer treated as equivalent
-  to `0.4.7b`. Replaced "F95 latest" with "Installed version" in the row
-  expansion. Internal cleanup.
+- v0.34.1 — Show home-screen (launcher) name in row title and expansion when it differs from the app's manifest label.
+- v0.34.0 — Fix version-comparison: `0.4` is no longer treated as equivalent to `0.4.7b`. Replaced "F95 latest" with "Installed version" in the row expansion. Internal cleanup.
 
 ## v0.31.0
 

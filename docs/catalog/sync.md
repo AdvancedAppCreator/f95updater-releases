@@ -1,6 +1,6 @@
 ---
 title: Catalog sync
-last_updated: 2026-05-18
+last_updated: 2026-05-20
 ---
 
 # Catalog sync
@@ -27,13 +27,24 @@ Both use HTTP `ETag` / `If-None-Match`, so subsequent syncs return **HTTP
 ## When the catalog syncs
 
 - **On every app launch** — automatically, in the background.
-- **Manually** — menu → **Catalog** → **Sync catalog now**.
+- **From the catalog tab** — tap the **Refresh** icon in the top bar. The "Updated Xh ago" subtitle next to the game count shows when you last successfully synced.
+- **From the main menu** — **Catalog ›** → **Sync catalog now**.
 
 You'll see a snackbar:
 
-- `Catalog updated: 25760 games (8 MB)` — fresh data downloaded.
+- `Catalog updated: 25760 games` — fresh data downloaded.
 - `Catalog already up-to-date` — server returned 304.
-- `Catalog sync failed: <reason>` — see [Diagnostics](../diagnostics/logs.md).
+- `Sync failed: <reason>` — see [Diagnostics](../diagnostics/logs.md).
+
+## Searching the catalog
+
+The search field at the top accepts:
+
+- Plain text — matches game titles and creator names.
+- `tag:<name>` tokens — filter by tag. Type `tag:` and a tag-name prefix to see autocomplete chips below the search field; tap a chip to insert the full tag name. Multiple `tag:` tokens are AND-combined.
+- Example: `harem tag:incest tag:netorase` finds games whose title or creator matches "harem" AND that are tagged both `incest` and `netorase`.
+
+All catalog filters, sort order, and the search query are remembered across app restarts — you don't have to re-set them every time.
 
 ## How fresh is "fresh"?
 
