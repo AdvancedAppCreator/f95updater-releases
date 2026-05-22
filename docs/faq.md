@@ -80,7 +80,7 @@ Should be under a minute for ~200 apps. If it takes much longer, re-run when you
 2. Install F95 Updater on the new phone.
 3. Menu → **Backup & config** → **Import backup** and pick the JSON.
 4. If you use JoiPlay, the JoiPlay rows come back when you re-import your
-   `.joiback` file via menu → **Install → Import JoiPlay backup**.
+   `.joiback` file via menu → **Backup & config → Import JoiPlay backup**.
 
 ## Where do I report a bug or request a feature?
 

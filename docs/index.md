@@ -126,13 +126,13 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
     ---
 
-    Install APKs, install games in JoiPlay, JoiPlay settings, import `.joiback`, delete game folders.
+    Install APKs, install games in JoiPlay, JoiPlay settings, delete game folders.
 
 -   :material-archive-outline:{ .lg .middle } **[Backup &amp; restore](backup/export-import.md)**
 
     ---
 
-    Export / import mapping state, auto-backups.
+    Export / import mapping state, import JoiPlay `.joiback` backups, auto-backups.
 
 -   :material-help-circle-outline:{ .lg .middle } **[FAQ](faq.md)**
 

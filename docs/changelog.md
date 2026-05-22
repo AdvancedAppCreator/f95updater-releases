@@ -16,7 +16,7 @@ intentionally summarized.
 - **Auto-link after APK install** — newly installed apps are rescanned and matched against the catalog immediately, no manual Refresh needed.
 - File pickers remember the last folder you browsed; subsequent picks reopen at the same place.
 - **Menu reorganized**:
-    - New **Install** submenu (APK + game-in-JoiPlay + JoiPlay-backup + JoiPlay settings).
+    - New **Install** submenu (APK + game-in-JoiPlay + JoiPlay settings) and **Backup & config** submenu (app backup + JoiPlay backup import).
     - **Help** submenu now contains documentation, about, support, and all diagnostics in one place.
 
 ## v0.41.0

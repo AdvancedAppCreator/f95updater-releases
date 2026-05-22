@@ -84,10 +84,10 @@ nav:
       - Install APK: joiplay/install-apk.md
       - Install game in JoiPlay: joiplay/install-game.md
       - JoiPlay settings: joiplay/settings.md
-      - Import .joiback backup: joiplay/import-backup.md
       - Delete a JoiPlay game: joiplay/delete-game.md
   - Backup & restore:
       - Export & import backup: backup/export-import.md
+      - Import .joiback backup: joiplay/import-backup.md
       - Auto-backups: backup/auto-backup.md
   - Self-update: self-update.md
   - Support the project: support.md
