@@ -17,6 +17,8 @@ app.
 When both options are configured, you'll see a chooser dialog. Pick whichever
 is easier for you — both go to the same developer.
 
+![Support dialog](screenshots/support-dialog.png)
+
 ## Option 1: Credit card / Apple Pay / Google Pay (Stripe)
 
 Opens a Stripe-hosted Payment Link in your browser. You can:

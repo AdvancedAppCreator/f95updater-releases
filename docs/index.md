@@ -16,6 +16,8 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 <a href="https://github.com/AdvancedAppCreator/f95updater-releases/releases/latest" class="md-button">Download latest APK</a>
 </p>
 
+![F95 Updater main screen](screenshots/main-screen.png)
+
 ---
 
 ## ✨ What it does

@@ -9,6 +9,8 @@ Menu → **Install ›** → **Install game in JoiPlay…**
 
 The app picker accepts both *launch files* and *archives* — pick whichever you have:
 
+![JoiPlay install picker](../screenshots/joiplay-install-picker.png)
+
 | What you pick | What happens |
 |---|---|
 | `.exe`, `.sh`, `.py`, `.html`, `.swf`, `.jgp` | Sent straight to JoiPlay's add-game dialog. |
@@ -25,6 +27,8 @@ The first time you use the install flow, a warning explains that JoiPlay will ta
 - A confirmation dialog appears before extraction, showing source path and destination. If the app has write access to the source archive, you'll see an optional **Delete the archive after a successful extraction** checkbox.
 - RAR5 is supported on arm64 devices (most modern phones); RAR4 works everywhere.
 - Safety caps: archives are rejected if they would expand past **10 GB** or if any single entry shows a >100× compression ratio (zip-bomb guard).
+
+![Archive extraction confirmation](../screenshots/archive-extract-confirm.png)
 
 ## After extraction
 

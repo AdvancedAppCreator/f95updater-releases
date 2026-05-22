@@ -34,15 +34,19 @@ You'll see a snackbar:
 
 - `Catalog updated: 25760 games` — fresh data downloaded.
 - `Catalog already up-to-date` — server returned 304.
-- `Sync failed: <reason>` — see [Diagnostics](../diagnostics/logs.md).
+- `Sync failed: <reason>` — save/upload logs from **Help → Diagnostics** if you need to report it.
 
 ## Searching the catalog
 
 The search field at the top accepts:
 
+![Catalog screen](../screenshots/catalog-main.png)
+
 - Plain text — matches game titles and creator names.
 - `tag:<name>` tokens — filter by tag. Type `tag:` and a tag-name prefix to see autocomplete chips below the search field; tap a chip to insert the full tag name. Multiple `tag:` tokens are AND-combined.
 - Example: `harem tag:incest tag:netorase` finds games whose title or creator matches "harem" AND that are tagged both `incest` and `netorase`.
+
+![Catalog tag filter](../screenshots/catalog-tag-filter.png)
 
 All catalog filters, sort order, and the search query are remembered across app restarts — you don't have to re-set them every time.
 

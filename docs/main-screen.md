@@ -10,7 +10,7 @@ last_updated: 2026-05-18
 Each row represents one tracked app — either an Android-installed app or a
 JoiPlay game.
 
-<!-- screenshot: main-screen-row.png -->
+![Main screen](screenshots/main-screen.png)
 
 From left to right:
 
@@ -45,6 +45,8 @@ From left to right:
 - **☕** – Buy me a coffee. Hidden if no donation URL is configured.
 - **🔄** – Refresh all (checks every mapped row against F95).
 - **⋮** – Main menu (Install, Catalog, Backup & config, Help).
+
+![Main menu](screenshots/main-menu.png)
 
 ## Filter & search
 

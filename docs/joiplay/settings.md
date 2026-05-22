@@ -4,6 +4,8 @@ Open the menu → **Install › → JoiPlay settings…**
 
 This dialog controls the file-system locations the app uses for the install / extract flows, and the storage permissions that gate them.
 
+![JoiPlay settings](../screenshots/joiplay-settings.png)
+
 ## Settings
 
 ### All-files access (MANAGE_EXTERNAL_STORAGE)

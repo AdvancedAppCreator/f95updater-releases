@@ -76,7 +76,7 @@ intentionally summarized.
 ## v0.29.0
 
 - **Donate URL** baked into the default app config — fresh installs now show
-  the ☕ icon. See [App config](backup/app-config.md).
+  the ☕ icon.
 - **Auto-backup safety net** added. Every app upgrade triggers a snapshot of
   your state; **Backup & config → Restore auto-backup…** lets you list and
   restore. See [Auto-backups](backup/auto-backup.md).

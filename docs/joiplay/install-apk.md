@@ -4,6 +4,8 @@ The **Install APK** flow lets you sideload any `.apk` file you have on your phon
 
 Open the menu (top-right **⋮**) → **Install ›** → **Install APK…**
 
+![APK install picker](../screenshots/apk-install-picker.png)
+
 ## How it works
 
 1. You're presented with a custom folder tree starting at internal storage. Navigate to your archive or APK.
@@ -13,6 +15,8 @@ Open the menu (top-right **⋮**) → **Install ›** → **Install APK…**
 3. The confirm dialog shows the APK's full path. If the app can write to the source file, you'll see a **Delete the APK after a successful install** checkbox — leave it off if you want to keep the file, tick it to clean up automatically.
 4. Tap **Install**. The system installer opens; confirm there.
 5. After the installer returns, the app verifies the package was actually installed (via Package Manager) before deleting the source if you opted in.
+
+![APK install confirmation](../screenshots/apk-install-confirm.png)
 
 ## Permissions required
 

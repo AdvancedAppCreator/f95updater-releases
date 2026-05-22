@@ -40,6 +40,8 @@ This catches:
 Games we can't reach (e.g. in a different storage area without permission)
 are left alone — we don't false-prune.
 
+![JoiPlay delete confirmation](../screenshots/joiplay-delete-confirm.png)
+
 ## Troubleshooting
 
 - **"Delete failed — folder no longer accessible"** — the All-files access permission has been revoked, or the path lies in a profile our app can't see (e.g. Samsung Secure Folder). Re-grant via **JoiPlay settings…** and retry.
