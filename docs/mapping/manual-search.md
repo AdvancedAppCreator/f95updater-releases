@@ -1,6 +1,6 @@
 ---
 title: Manual catalog search
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 ---
 
 # Manually map an app via catalog search
@@ -19,11 +19,15 @@ The dialog shows:
 - The app's package name, install dates, sizes.
 - Current mapping (F95 latest version, acknowledged version).
 - **Search catalog** box — pre-filled with the app's label.
+- **Fuzzy find** — tries a relaxed catalog search when the normal search is too
+  strict.
+- **Search external sources** — searches configured external mirrors and saves
+  picked results as manual/external matches.
 - **Paste a thread URL** field below, for when search can't find it.
 
 ## Search behavior
 
-The search runs over the local catalog (~25k titles) with these priorities:
+The search runs over the local catalog (30,000+ titles) with these priorities:
 
 | Score | Match type |
 |------:|------------|
@@ -59,3 +63,8 @@ Tapping any result instantly:
   auto-match leaves it alone forever.
 - **Clear URL** – remove the mapping entirely.
 - **Cancel** – close without saving.
+
+On wide/landscape/unfolded screens, the dialog uses a split layout: app details
+and search inputs stay on the left, while search results appear on the right.
+The action buttons use one horizontally scrollable row to keep more vertical
+space for results.

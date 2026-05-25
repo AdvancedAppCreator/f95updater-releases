@@ -69,6 +69,7 @@ extra:
 nav:
   - Home: index.md
   - Getting started: getting-started.md
+  - Permissions: permissions.md
   - Main screen tour: main-screen.md
   - Mapping apps to F95:
       - Auto-match: mapping/auto-match.md
@@ -79,6 +80,7 @@ nav:
   - Catalog:
       - Sync catalog: catalog/sync.md
       - Refresh from catalog: catalog/refresh.md
+      - Review unmapped games: catalog/review-unmapped.md
       - Auto-hide non-games: catalog/auto-hide.md
   - JoiPlay & APK installs:
       - Install APK: joiplay/install-apk.md
@@ -88,7 +90,10 @@ nav:
   - Backup & restore:
       - Export & import backup: backup/export-import.md
       - Import .joiback backup: joiplay/import-backup.md
+      - Probably unused JoiPlay folders: joiplay/unused-folders.md
       - Auto-backups: backup/auto-backup.md
+      - App config: backup/app-config.md
+  - Diagnostics and logs: diagnostics/logs.md
   - Self-update: self-update.md
   - Support the project: support.md
   - Troubleshooting / FAQ: faq.md

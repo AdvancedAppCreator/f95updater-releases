@@ -1,6 +1,6 @@
 ---
 title: Refresh from catalog
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 ---
 
 # Refresh from catalog
@@ -21,9 +21,8 @@ A non-dismissible progress dialog shows the current row, the running matched
 count, and an estimated time remaining. You can **Cancel** at any time — work
 done so far is kept.
 
-Performance: ~200 apps complete in well under a minute. Each app does a
-constant-time lookup against a precomputed first-word index, not a 25k
-linear scan.
+Performance: ~200 apps complete in well under a minute. Each app uses indexed
+catalog lookups instead of scanning the full 30,000+ game list linearly.
 
 ## What gets touched
 
@@ -41,6 +40,10 @@ For each row:
 The full **Catalog…** submenu also includes:
 
 - [Sync catalog now](sync.md) — download a fresh catalog.
+- [Review unmapped games](review-unmapped.md) — manually resolve rows that did
+  not get a safe match.
+- **Overwrite manual matches on refresh** — let future refreshes replace
+  manual/external matches. Leave this off if you want manual choices protected.
 - [Auto-hide non-games](auto-hide.md) — hide system utilities and obvious
   non-games in one tap.
 - **Reset all acknowledgements** — clear the "I installed this version"

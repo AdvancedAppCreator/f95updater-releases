@@ -46,13 +46,16 @@ When changing code in `MainActivity.kt`, look up the affected feature here:
 | `EditMappingDialog` (search + URL + flags)          | `docs/mapping/manual-search.md`            |
 | `notOnF95` flag                                     | `docs/mapping/not-on-f95.md`               |
 | `refreshFromCatalog` button                         | `docs/catalog/refresh.md`                  |
+| Catalog → Review unmapped games                     | `docs/catalog/review-unmapped.md`          |
 | Catalog → Sync catalog now                          | `docs/catalog/sync.md`                     |
 | Catalog → Auto-hide non-games                       | `docs/catalog/auto-hide.md`                |
 | JoiPlay submenu                                     | `docs/joiplay/*.md`                        |
 | `JoiPlayScanner.deleteFolder`                       | `docs/joiplay/delete-game.md`              |
+| Probably unused JoiPlay folders                     | `docs/joiplay/unused-folders.md`           |
 | `AutoBackupManager`                                 | `docs/backup/auto-backup.md`               |
 | `AppConfigStore` (drop-in + import/export)          | `docs/backup/app-config.md`                |
 | `AppLog` / `CrashReporter` upload UI                | `docs/diagnostics/*.md`                    |
+| All-files / usage / scoped folder permissions       | `docs/permissions.md`                      |
 | `AppUpdater.check`/`install`                        | `docs/self-update.md`                      |
 
 If you add a new menu item, add a row to this table and create the page.

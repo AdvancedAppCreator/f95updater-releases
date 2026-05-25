@@ -1,6 +1,6 @@
 ---
 title: Auto-match
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 ---
 
 # Auto-match (Refresh from catalog)
@@ -13,6 +13,8 @@ using the local catalog — no network round-trip per app, no scraping.
 - **First launch** – right after the welcome flow finishes.
 - **Manually** – menu → **Refresh from catalog**.
 - **After importing a `.joiback`** – just on the newly-imported JoiPlay games.
+- **After installing an APK** – the app rescans installed packages and tries to
+  match the new row.
 
 ## How the match is decided
 
@@ -30,6 +32,10 @@ hit:
    like "ADM" → "The Headmaster".
 
 Rows you've marked [Not on F95](not-on-f95.md) are skipped entirely.
+
+Manual and external matches are preserved during normal refreshes. To allow
+catalog refresh to overwrite those choices, enable **Catalog -> Overwrite manual
+matches on refresh**.
 
 ## Progress UI
 

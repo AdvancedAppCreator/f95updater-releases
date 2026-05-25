@@ -1,6 +1,6 @@
 ---
 title: Getting started
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 ---
 
 # Getting started
@@ -14,9 +14,10 @@ You'll see a short welcome dialog with two options:
 
 - **Continue** – proceeds with a catalog match on every Android app installed
   on your phone.
-- **Import JoiPlay backup…** – if you also use JoiPlay, point the picker at
-  your `.joiback` file. After import, the catalog match runs over both your
-  Android apps **and** your JoiPlay games together.
+- **Import JoiPlay backup…** – if you also use JoiPlay, the app explains why it
+  needs scoped access to your backup folder, then lets you pick the `.joiback`
+  file. After import, the catalog match runs over both your Android apps **and**
+  your JoiPlay games together.
 
 <!-- screenshot: getting-started-welcome.png -->
 
@@ -53,3 +54,5 @@ matched row gets its F95Zone thread, latest version, and color status set.
 - Long-press a row to enter **multi-select** mode (great for bulk-hiding
   non-game apps) — see [Main screen tour](main-screen.md).
 - Run [Auto-hide non-games](catalog/auto-hide.md) to clean up the list.
+- If Android asks for a permission, see [Permissions](permissions.md) for what
+  each one is used for.

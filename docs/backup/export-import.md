@@ -1,6 +1,6 @@
 ---
 title: Export & import backup
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 ---
 
 # Export & import backup
@@ -27,16 +27,24 @@ whatever survives reinstalls.
 
 ## Import
 
-Menu → **Backup & config** → **Import backup**. Pick the file. The app
-**replaces** your current data with the contents of the backup and re-runs
-the scan.
+Menu → **Backup & config** → **Import backup**. The first time, the app explains
+why it needs scoped access to the folder containing your backup, opens Android's
+folder picker, then shows the in-app file picker for the JSON file. The app
+**replaces** your current data with the contents of the backup and re-runs the
+scan.
+
+The chosen backup folder is remembered across restarts and shared with JoiPlay
+`.joiback` import as long as Android still reports the persisted folder grant.
 
 The import is also tolerant of the legacy "bare mappings" format and of
 exports made by the PC-side bulk lookup tool.
 
 ## Not included
 
-- **All-files access permission** — re-grant via **Menu → Install → JoiPlay settings…** after reinstall.
+- **All-files access permission** — re-grant via **Menu → Grant all files
+  access** after reinstall if you need install/delete/unused-folder features.
+- **Scoped backup folder access** — Android owns this grant; if it is revoked,
+  the app will ask you to choose the backup folder again.
 
 ## See also
 

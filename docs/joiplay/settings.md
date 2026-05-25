@@ -1,3 +1,8 @@
+---
+title: JoiPlay settings
+last_updated: 2026-05-24
+---
+
 # JoiPlay settings
 
 Open the menu → **Install › → JoiPlay settings…**
@@ -12,7 +17,9 @@ This dialog controls the file-system locations the app uses for the install / ex
 
 The app's file pickers (used for **Install game in JoiPlay** and **Install APK**) browse the full filesystem directly. This needs the **All files access** permission, which is granted via a system Settings page — not a regular runtime prompt.
 
-The settings dialog shows whether access is currently granted (green) or missing (red) and provides an **Open settings** button. After granting, return to the app — the indicator updates automatically.
+The settings dialog shows whether access is currently granted (green) or missing
+(red). You can also use the main menu item **Grant all files access** or
+**Revoke all files access**.
 
 To **revoke** the permission later: Android **Settings → Apps → F95 Updater → Permissions → All files access → Don't allow**.
 

@@ -1,6 +1,6 @@
 ---
 title: Catalog sync
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 ---
 
 # Catalog sync
@@ -34,7 +34,8 @@ You'll see a snackbar:
 
 - `Catalog updated: 25760 games` — fresh data downloaded.
 - `Catalog already up-to-date` — server returned 304.
-- `Sync failed: <reason>` — save/upload logs from **Help → Diagnostics** if you need to report it.
+- `Sync failed: <reason>` — use **Help -> Save local diagnostics** or **Help ->
+  Upload app logs + screenshots** if you need to report it.
 
 ## Searching the catalog
 

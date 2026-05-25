@@ -1,6 +1,6 @@
 ---
 title: FAQ & troubleshooting
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 ---
 
 # FAQ & troubleshooting
@@ -30,7 +30,8 @@ Two possibilities:
    path's folder icon to verify in your file manager.
 2. **The folder is gone but the `.joiback` snapshot still lists it.** On every
    launch the app walks the backup list and checks folder existence. Missing
-   ones are auto-marked deleted. Force a relaunch if it hasn't kicked in yet.
+   ones are auto-marked deleted when permissions allow it. Force a relaunch if
+   it hasn't kicked in yet.
 
 If neither applies, see [Delete a JoiPlay game](joiplay/delete-game.md).
 
@@ -72,6 +73,19 @@ with empty donation URLs, the icon stays hidden — this is intentional.
 ## The catalog refresh is very slow
 
 Should be under a minute for ~200 apps. If it takes much longer, re-run when you're not on a heavily-throttled network. The catalog itself is ~8 MB gzipped; the per-app matching is local.
+
+## Import backup asks for folder access again
+
+The app remembers the scoped backup folder grant across restarts, but Android
+can revoke it or the folder can move. If the grant is gone, the app shows the
+disclaimer and asks you to choose the folder again.
+
+## How do I send useful logs?
+
+Open **Menu -> Help**. Use **Copy diagnostics summary** for a quick report or
+**Save local diagnostics** to write logs/crashes to Documents. If diagnostics
+upload is configured, **Upload app logs + screenshots** sends the log plus any
+diagnostic screenshots you captured.
 
 ## How do I move my data to a new phone?
 

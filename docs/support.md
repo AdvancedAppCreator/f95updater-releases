@@ -1,6 +1,6 @@
 ---
 title: Support the project
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 ---
 
 # Support the project
@@ -11,7 +11,8 @@ app.
 
 ## How to find them
 
-- Tap the **☕ icon** in the top-right of the main screen.
+- Tap the **☕ icon** in the top-right of the main screen. On narrow/landscape
+  layouts it may move into the overflow menu.
 - Or open the menu → **Help → Support the project**.
 
 When both options are configured, you'll see a chooser dialog. Pick whichever

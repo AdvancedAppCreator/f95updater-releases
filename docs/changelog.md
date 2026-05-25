@@ -1,12 +1,46 @@
 ---
 title: Changelog
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 ---
 
 # Changelog
 
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
+
+## v1.0
+
+- Public release updated from the foldable-tested v0.50 series.
+- Compact and landscape layouts were improved across the main list, catalog
+  filters, bottom navigation, diagnostics button, and game-settings dialog.
+- The game-settings dialog now uses a wide-screen split layout with search
+  results on the right, and keeps its action buttons on one row when there is
+  enough width. See [Manual search](mapping/manual-search.md).
+- Dialogs and in-progress operations are preserved across rotation/fold state
+  changes where Android allows it.
+- Diagnostics gained screenshot capture, local save/copy actions, and optional
+  log/screenshot upload. See [Diagnostics and logs](diagnostics/logs.md).
+- Regular backup import and JoiPlay `.joiback` import now use scoped folder
+  access and remember the granted backup folder across restarts. See
+  [Export & import backup](backup/export-import.md) and
+  [Import .joiback backup](joiplay/import-backup.md).
+- Permission menu items now clearly separate all-files access from usage-data
+  access. See [Permissions](permissions.md).
+- Catalog review tools now include [Review unmapped games](catalog/review-unmapped.md)
+  and the **Overwrite manual matches on refresh** setting.
+- Added [Probably unused JoiPlay folders](joiplay/unused-folders.md), a
+  review-only report for folders not referenced by a fresh `.joiback` backup.
+- The SWF-to-video converter experiment was removed.
+
+## v0.45.x
+
+- Public-readiness cleanup: clearer permission rationale dialogs, README privacy
+  notes, diagnostics export without requiring upload config, and scoped backup
+  imports.
+- Backup/config flows were reorganized so regular JSON import and JoiPlay
+  `.joiback` import share scoped folder grants when possible.
+- Public v1.0 was briefly released, then public testing was paused while
+  foldable/narrow-screen layout issues were fixed in the v0.50 private series.
 
 ## v0.42.0
 

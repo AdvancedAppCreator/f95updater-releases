@@ -1,3 +1,8 @@
+---
+title: Install APK
+last_updated: 2026-05-24
+---
+
 # Install APK
 
 The **Install APK** flow lets you sideload any `.apk` file you have on your phone — including ones inside ZIP / RAR / 7Z archives — without having to dig through file managers manually.
@@ -23,7 +28,9 @@ Open the menu (top-right **⋮**) → **Install ›** → **Install APK…**
 - **All-files access** (MANAGE_EXTERNAL_STORAGE) — so the picker can browse your full storage.
 - **Install unknown apps** (REQUEST_INSTALL_PACKAGES) — granted via the system prompt on first install attempt.
 
-The first time you tap **Install APK…** the app may show *"Grant All-files access first (JoiPlay settings)"* — open the **Install › JoiPlay settings** entry to grant it, then come back.
+The first time you tap **Install APK…**, the app may explain why all-files
+access is needed and open Android settings. You can also use menu → **Grant all
+files access**.
 
 ## After install
 

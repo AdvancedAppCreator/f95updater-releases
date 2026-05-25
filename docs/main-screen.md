@@ -1,6 +1,6 @@
 ---
 title: Main screen tour
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 ---
 
 # Main screen tour
@@ -42,7 +42,8 @@ From left to right:
 ## Top bar
 
 - **Title** – shows the app version, plus a small counter (`X of Y apps`).
-- **☕** – Buy me a coffee. Hidden if no donation URL is configured.
+- **☕** – Support the project. Hidden if no donation URL is configured, and
+  moved into the overflow menu on narrow/landscape layouts.
 - **🔄** – Refresh all (checks every mapped row against F95).
 - **⋮** – Main menu (Install, Catalog, Backup & config, Help).
 
@@ -57,7 +58,33 @@ Below the top bar:
   both tags). While typing `tag:<prefix>` you'll see **autocomplete chips** below the field — tap a chip to insert the full tag name.
 - **Status filter chips** – toggle rows by Update / Current / Unknown /
   Unmapped / Failed.
+- **Manual-only filter** – show manual/external matches when you are reviewing
+  mapping decisions.
 - **Source filter** – Android only / JoiPlay only / Both.
+
+On short landscape screens and narrow foldable layouts, filters compact into
+single-row controls and some row actions move behind overflow menus to preserve
+space.
+
+## Main menu
+
+The overflow menu contains:
+
+- **Refresh from catalog** — re-match all rows against the local catalog.
+- **Check for app update** — force the self-updater check.
+- **Show hidden apps / Show visible apps** — switch between visible and hidden
+  rows.
+- **Catalog** — sync the catalog, review unmapped games, control manual-match
+  overwrite behavior, auto-hide non-games, and reset acknowledgements.
+- **Install** — install APKs, install JoiPlay games, and open JoiPlay settings.
+- **Backup & config** — export/import backups, import `.joiback` files, scan
+  probably-unused JoiPlay folders, and restore auto-backups.
+- **Grant/Revoke all files access** and **Grant/Revoke usage data access** —
+  open the relevant Android settings pages.
+- **Help** — documentation, About, diagnostics, logs, and support links.
+
+When diagnostics are enabled, a floating screenshot button is visible over the
+app. Dialogs that need it have their own screenshot button inside the dialog.
 
 ## Multi-select
 

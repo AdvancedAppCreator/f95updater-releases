@@ -1,6 +1,6 @@
 ---
 title: F95 Updater
-last_updated: 2026-05-20
+last_updated: 2026-05-24
 hide:
   - navigation
 ---
@@ -140,6 +140,13 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
     Common questions and troubleshooting.
 
+-   :material-bug-outline:{ .lg .middle } **[Diagnostics and logs](diagnostics/logs.md)**
+
+    ---
+
+    Copy diagnostics, save local logs, and attach screenshots when diagnostics
+    are enabled.
+
 </div>
 
 ---
@@ -152,4 +159,5 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 
 ## Reporting a problem
 
-If something looks off, capture screenshots and write down what you tapped, then open an issue or post in the [F95Zone support thread](https://github.com/AdvancedAppCreator/f95updater-releases/issues).
+If something looks off, capture diagnostics/screenshots and write down what you
+tapped, then open a [GitHub issue](https://github.com/AdvancedAppCreator/f95updater-releases/issues).
