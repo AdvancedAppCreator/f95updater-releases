@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Help site
+    url: https://advancedappcreator.github.io/f95updater-releases/
+    about: Read setup, permissions, JoiPlay, backup, and troubleshooting docs.
+  - name: Latest APK
+    url: https://github.com/AdvancedAppCreator/f95updater-releases/releases/latest
+    about: Download the newest public release.

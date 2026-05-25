@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an improvement for F95 Updater.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do that the app does not handle well today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like F95 Updater to do?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Installed apps / main screen
+        - Catalog search or matching
+        - APK install
+        - JoiPlay import/install/upgrade
+        - Backup/export/import
+        - Self-update
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Is there another workflow that partially solves this?

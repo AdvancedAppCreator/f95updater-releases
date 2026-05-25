@@ -1,6 +1,6 @@
 ---
 title: F95 Updater
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 hide:
   - navigation
 ---
@@ -16,7 +16,11 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 <a href="https://github.com/AdvancedAppCreator/f95updater-releases/releases/latest" class="md-button">Download latest APK</a>
 </p>
 
-![F95 Updater main screen](screenshots/main-screen.png)
+![F95 Updater cover](screenshots/f95updater-cover.png)
+
+<p style="font-size: 0.9em; color: var(--md-default-fg-color--light);">
+Local-first tracker, catalog search, Android APK helpers, and JoiPlay archive upgrades in one app.
+</p>
 
 ---
 

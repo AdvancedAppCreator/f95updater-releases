@@ -5,6 +5,8 @@ and referenced by the help pages.
 
 Current stable filenames:
 
+- `f95updater-cover.png` - manually composed GitHub/F95 thread cover art from
+  the app icon and screenshots.
 - `main-screen.png`
 - `main-menu.png`
 - `catalog-main.png`
