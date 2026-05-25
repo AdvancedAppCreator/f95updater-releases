@@ -1,12 +1,28 @@
 ---
 title: Changelog
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Changelog
 
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
+
+## v1.1.8
+
+- **JoiPlay archive upgrade flow**: when you pick a `.zip`, `.rar`, or `.7z`
+  through [Install game in JoiPlay](joiplay/install-game.md), the app analyzes
+  it first and offers to replace a matching imported JoiPlay game instead of
+  always installing as new.
+- Upgrades keep a rollback backup of the old game folder, preserve/copy saves
+  where possible, show progress immediately after your choice, and keep the
+  progress dialog visible while cancellation cleanup finishes.
+- [Import .joiback backup](joiplay/import-backup.md) no longer forces Android's
+  folder picker on first import when All files access is already granted.
+- Direct JoiPlay launches after upgrade/import now match JoiPlay's runtime
+  intent contract more closely, fixing Ren'Py runtime launch errors seen when
+  launching from F95 Updater even though launching from JoiPlay worked.
+- Catalog data was refreshed.
 
 ## v1.0
 

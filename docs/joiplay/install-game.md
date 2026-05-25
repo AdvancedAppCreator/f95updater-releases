@@ -1,6 +1,6 @@
 ---
 title: Install a game in JoiPlay
-last_updated: 2026-05-20
+last_updated: 2026-05-25
 ---
 
 # Install a game in JoiPlay
@@ -14,7 +14,7 @@ The app picker accepts both *launch files* and *archives* — pick whichever you
 | What you pick | What happens |
 |---|---|
 | `.exe`, `.sh`, `.py`, `.html`, `.swf`, `.jgp` | Sent straight to JoiPlay's add-game dialog. |
-| `.zip`, `.rar`, `.7z` | Extracted into your **Destination folder** first; then a file browser appears so you can pick the game's launch file inside. |
+| `.zip`, `.rar`, `.7z` | Analyzed first for a possible upgrade. If no existing JoiPlay game matches, it is extracted into your **Destination folder**; then a file browser appears so you can pick the game's launch file inside. |
 
 ## First-time heads up
 
@@ -22,13 +22,35 @@ The first time you use the install flow, a warning explains that JoiPlay will ta
 
 ## During extraction
 
+- Before the destination picker appears, archive picks show an **Analyzing archive**
+  dialog while the app checks whether this can upgrade an imported JoiPlay game.
 - Progress shows both byte count and percentage, with a heartbeat that updates at least every 200 ms so the UI never appears frozen.
 - Password-protected archives prompt you for the password and retry. Passwords are kept in memory only — never stored.
 - A confirmation dialog appears before extraction, showing source path and destination. If the app has write access to the source archive, you'll see an optional **Delete the archive after a successful extraction** checkbox.
 - RAR5 is supported on arm64 devices (most modern phones); RAR4 works everywhere.
 - Safety caps: archives are rejected if they would expand past **10 GB** or if any single entry shows a >100× compression ratio (zip-bomb guard).
+- If you cancel during extraction or upgrade, the progress dialog stays up while
+  partial files are cleaned up and any upgrade backup is restored.
 
 ![Archive extraction confirmation](../screenshots/archive-extract-confirm.png)
+
+## Upgrading an existing JoiPlay game
+
+If the archive looks like a newer copy of a JoiPlay game you've imported from a
+`.joiback` backup, the app offers an **Upgrade** option before asking for a
+destination folder.
+
+When you upgrade:
+
+- The existing game folder is renamed to a rollback backup before extraction.
+- The new archive is extracted into the original game folder location.
+- Saves are preserved/copied where possible.
+- The old backup folder is kept after success so you can manually roll back if
+  needed.
+- The success dialog includes a launch button for the upgraded game.
+
+If the archive does not match a known imported JoiPlay game, or you choose
+**Install as new**, the normal destination-folder flow is used.
 
 ## After extraction
 
