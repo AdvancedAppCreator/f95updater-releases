@@ -1,6 +1,6 @@
 ---
 title: Main screen tour
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Main screen tour
@@ -81,7 +81,8 @@ The overflow menu contains:
   probably-unused JoiPlay folders, and restore auto-backups.
 - **Grant/Revoke all files access** and **Grant/Revoke usage data access** —
   open the relevant Android settings pages.
-- **Help** — documentation, About, diagnostics, logs, and support links.
+- **Help** — documentation, About, app sharing, issue reporting, diagnostics,
+  logs, and support links.
 
 When diagnostics are enabled, a floating screenshot button is visible over the
 app. Dialogs that need it have their own screenshot button inside the dialog.

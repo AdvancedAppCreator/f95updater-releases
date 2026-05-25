@@ -1,6 +1,6 @@
 ---
 title: Support the project
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Support the project
@@ -14,6 +14,9 @@ app.
 - Tap the **☕ icon** in the top-right of the main screen. On narrow/landscape
   layouts it may move into the overflow menu.
 - Or open the menu → **Help → Support the project**.
+
+The **About** dialog also has quick links for sharing the app, opening the
+official F95Zone thread, and reporting bugs or feature requests on GitHub.
 
 When both options are configured, you'll see a chooser dialog. Pick whichever
 is easier for you — both go to the same developer.
@@ -38,3 +41,14 @@ No account required. The transaction shows up on your statement as
 Opens [buymeacoffee.com/advancedappcreator](https://buymeacoffee.com/advancedappcreator)
 in your browser. You can sign in (or check out as a guest) and tip in
 "coffee" units of a few dollars each.
+
+## Share or report a problem
+
+Open **Menu → Help → About**, then choose:
+
+- **Share app** — opens Android's share sheet with the positioning text
+  "Android companion for tracking F95Zone updates across installed APKs and
+  JoiPlay games", plus the latest APK, help site, and F95 thread links.
+- **Report issue** — opens the GitHub Issues page for bug reports and feature
+  requests.
+- **F95 thread** — opens the official F95Zone discussion thread.

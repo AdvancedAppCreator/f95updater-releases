@@ -10,6 +10,10 @@ intentionally summarized.
 
 ## v1.1.8
 
+- **About dialog sharing/support polish**: About now includes quick actions to
+  share the app, open the official F95 thread, and report bugs or request
+  features through GitHub Issues. The share text uses the Android APK + JoiPlay
+  games positioning. See [Support the project](support.md).
 - **JoiPlay archive upgrade flow**: when you pick a `.zip`, `.rar`, or `.7z`
   through [Install game in JoiPlay](joiplay/install-game.md), the app analyzes
   it first and offers to replace a matching imported JoiPlay game instead of
