@@ -8,7 +8,7 @@ hide:
 # F95 Updater
 
 <p style="font-size: 1.15em; margin-top: -0.5em; color: var(--md-default-fg-color--light);">
-The Android companion app for tracking <strong>F95Zone</strong> game updates &mdash; for everything installed on your phone <em>and</em> everything in your JoiPlay library.
+The Android companion for tracking <strong>F95Zone</strong> updates across installed APKs and JoiPlay games.
 </p>
 
 <p>
@@ -19,7 +19,7 @@ The Android companion app for tracking <strong>F95Zone</strong> game updates &md
 ![F95 Updater cover](screenshots/f95updater-cover.png)
 
 <p style="font-size: 0.9em; color: var(--md-default-fg-color--light);">
-Local-first tracker, catalog search, Android APK helpers, and JoiPlay archive upgrades in one app.
+Local-first catalog search, version matching, Android APK helpers, and JoiPlay archive upgrades in one app.
 </p>
 
 ---

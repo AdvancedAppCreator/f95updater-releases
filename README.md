@@ -10,7 +10,7 @@
   <a href="https://github.com/AdvancedAppCreator/f95updater-releases/issues"><img alt="Issues" src="https://img.shields.io/github/issues/AdvancedAppCreator/f95updater-releases"></a>
 </p>
 
-**F95 Updater** is a local-first Android companion app for tracking F95Zone game updates across installed Android apps and JoiPlay libraries.
+**F95 Updater** is a local-first Android companion for tracking F95Zone updates across installed APKs and JoiPlay games.
 
 It keeps a searchable catalog of F95Zone game threads, matches local apps/games to their threads, compares installed versions with the latest known versions, and opens the right thread when an update is available.
 
