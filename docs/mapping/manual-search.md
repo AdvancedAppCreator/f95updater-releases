@@ -1,6 +1,6 @@
 ---
 title: Manual catalog search
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Manually map an app via catalog search
@@ -18,6 +18,8 @@ The dialog shows:
 
 - The app's package name, install dates, sizes.
 - Current mapping (F95 latest version, acknowledged version).
+- Personal fields: **status** (`Playing`, `Waiting for update`,
+  `Completed`, `Archived`), **rating**, and private **notes**.
 - **Search catalog** box — pre-filled with the app's label.
 - **Fuzzy find** — tries a relaxed catalog search when the normal search is too
   strict.
@@ -55,13 +57,14 @@ Tapping any result instantly:
 
 ## Other dialog options
 
-- **Save URL** – saves whatever you've pasted in the URL field.
+- **Save** – saves the pasted URL plus personal status/rating/notes.
 - **Mark installed** – sets `acknowledgedVersion = lastSeenVersion`, clearing
   the red "update available" status.
 - **Hide / Unhide** – hide this row from the main list.
 - **[Not on F95](not-on-f95.md)** – mark the app as not present on F95Zone so
   auto-match leaves it alone forever.
-- **Clear URL** – remove the mapping entirely.
+- **Clear URL** – remove the F95 mapping. If you have status/rating/notes, those
+  personal fields are kept.
 - **Cancel** – close without saving.
 
 On wide/landscape/unfolded screens, the dialog uses a split layout: app details

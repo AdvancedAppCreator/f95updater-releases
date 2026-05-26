@@ -20,6 +20,19 @@ It keeps a searchable catalog of F95Zone game threads, matches local apps/games 
 - **Help site:** [advancedappcreator.github.io/f95updater-releases](https://advancedappcreator.github.io/f95updater-releases/)
 - **Issues/support:** [GitHub Issues](https://github.com/AdvancedAppCreator/f95updater-releases/issues)
 
+## Why trust it?
+
+F95 Updater is local-first: your installed app list, mappings, personal notes,
+ratings, and JoiPlay data stay on your device unless you export a backup or
+manually attach diagnostics to a report.
+
+- **No F95Zone login required** — it uses public thread/catalog data.
+- **No game downloader** — it opens the relevant F95 thread; you choose what to
+  download and from where.
+- **No hosted account, ads, or analytics SDKs.**
+- **Public release trail** — APKs, version metadata, changelogs, docs, and issue
+  reports live on GitHub/GitHub Pages.
+
 ## Highlights
 
 | Feature | What it does |

@@ -26,6 +26,8 @@ From left to right:
 - **F95 title** – shown on a second line when the catalog title differs from
   the local label, so you always know which game we matched.
 - **Versions** – `<installed> → <latest>`.
+- **Personal labels** – if set, your status/rating/notes marker appears under
+  the version line, for example `Playing • Rating 4/5 • Notes`.
 - **Install / last-used / size** – small metadata row.
 
 ### Row icons (right side)

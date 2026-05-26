@@ -1,6 +1,6 @@
 ---
 title: Permissions
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Permissions
@@ -47,3 +47,10 @@ installer. Android may ask you once to allow F95 Updater to install unknown apps
 
 The app has no analytics SDK and does not request contacts, location, camera, or
 microphone access.
+
+## Local-first trust model
+
+F95 Updater does not require an F95Zone login, hosted account, or account sync.
+It opens public F95 threads and GitHub-hosted app releases, but your mappings,
+personal notes, ratings, hidden list, and JoiPlay data stay on your device unless
+you export a backup or manually attach diagnostics to a report.

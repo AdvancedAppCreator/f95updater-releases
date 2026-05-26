@@ -8,6 +8,25 @@ last_updated: 2026-05-25
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
 
+## v1.1.13
+
+- Trust/privacy positioning was made clearer in About/share copy, README, help
+  home, and permissions docs: local-first, no F95 login, no hosted account, no
+  analytics, no automatic game downloader, and public GitHub releases/docs.
+
+## v1.1.12
+
+- Rows now support private personal tracking fields: status labels
+  (`Playing`, `Waiting for update`, `Completed`, `Archived`), a 1-5 rating, and
+  notes. These show on the main row/details panel and are included in backups.
+
+## v1.1.11
+
+- Advanced app configs can now include multiple self-update feeds. The app
+  checks every configured `version.json` URL and uses the feed with the highest
+  `versionCode`, so public and private/dev update feeds can coexist in one
+  config.
+
 ## v1.1.8
 
 - **About dialog sharing/support polish**: About now includes quick actions to

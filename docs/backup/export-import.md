@@ -1,6 +1,6 @@
 ---
 title: Export & import backup
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # Export & import backup
@@ -11,7 +11,7 @@ file. Use it before reinstalling, switching phones, or experimenting.
 ## What's included
 
 - All **mappings** (package → F95 URL, threadId, lastSeenVersion,
-  acknowledgedVersion, notOnF95 flag).
+  acknowledgedVersion, notOnF95 flag, personal status/rating/notes).
 - The **hidden** packages list.
 - A copy of the **JoiPlay games.json** from your last `.joiback` import.
 - A copy of the **JoiPlay metadata.json** (used as a version-conflict fallback).

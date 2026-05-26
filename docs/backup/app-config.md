@@ -1,6 +1,6 @@
 ---
 title: App config
-last_updated: 2026-05-24
+last_updated: 2026-05-25
 ---
 
 # App config
@@ -28,6 +28,24 @@ Depending on the build, app config may include:
 - Private updater settings for test builds.
 
 Public builds work without any app config file.
+
+## Multiple update feeds
+
+Advanced/dev configs can keep the normal public updater feed and add private
+feeds:
+
+```json
+{
+  "versionInfoUrl": "https://github.com/AdvancedAppCreator/f95updater-releases/releases/latest/download/version.json",
+  "versionInfoUrls": [
+    "https://example.blob.core.windows.net/app/version.json"
+  ]
+}
+```
+
+The app checks every non-empty URL from `versionInfoUrl` and `versionInfoUrls`,
+deduplicates exact repeats, and offers the update with the highest
+`versionCode`. Existing configs that only use `versionInfoUrl` keep working.
 
 ## Troubleshooting
 

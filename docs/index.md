@@ -161,6 +161,19 @@ Local-first catalog search, version matching, Android APK helpers, and JoiPlay a
 - ❌ **It is not affiliated with F95Zone or JoiPlay.** All trademarks and copyrights remain with their owners.
 - ❌ **It is not on Google Play.** Sideload from [GitHub Releases](https://github.com/AdvancedAppCreator/f95updater-releases/releases/latest).
 
+## Why trust it?
+
+F95 Updater is local-first: your app list, mappings, personal notes, ratings,
+and JoiPlay data stay on your device unless you export a backup or manually
+attach diagnostics to a report.
+
+- No F95Zone login or hosted account.
+- No automatic game downloader; the app opens the F95 thread and you stay in
+  control of downloads.
+- No analytics SDKs or ads.
+- Public APK releases, changelogs, docs, and issue tracking on GitHub/GitHub
+  Pages.
+
 ## Reporting a problem
 
 If something looks off, capture diagnostics/screenshots and write down what you

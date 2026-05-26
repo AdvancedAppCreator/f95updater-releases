@@ -1,6 +1,6 @@
 ---
 title: Self-update
-last_updated: 2026-05-20
+last_updated: 2026-05-25
 ---
 
 # Self-update
@@ -9,13 +9,19 @@ The app can update itself in place by pulling a new APK from GitHub Releases. No
 
 ## How it works
 
-On every launch, the app fetches `version.json` from
+On every launch, the app fetches `version.json` from its configured update
+feed. Public builds use
 `github.com/AdvancedAppCreator/f95updater-releases/releases/latest/download/version.json`.
 
 If `version.json` advertises a higher `versionCode` than the running app,
 you'll see an **"Update available"** dialog.
 
 You can also force the check manually: menu → **Check for app update**.
+
+Advanced/dev configs can provide more than one update feed. The app checks
+every configured feed that has a URL and uses the response with the highest
+`versionCode`, so a single config can watch both the public GitHub release and a
+private/dev feed.
 
 ## Update dialog
 
