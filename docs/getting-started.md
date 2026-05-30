@@ -1,12 +1,16 @@
 ---
 title: Getting started
-last_updated: 2026-05-24
+last_updated: 2026-05-29
 ---
 
 # Getting started
 
+F95 Updater is now the legacy F95-only app. New multi-source development has
+moved to Adult Game Manager, and recent F95 Updater builds show a one-time
+startup notice with links to the AGM thread and APK download.
+
 When you launch F95 Updater for the first time, three things happen
-automatically.
+automatically after you continue past that notice.
 
 ## 1. Welcome dialog
 

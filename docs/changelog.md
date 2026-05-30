@@ -1,12 +1,18 @@
 ---
 title: Changelog
-last_updated: 2026-05-25
+last_updated: 2026-05-29
 ---
 
 # Changelog
 
 Major user-visible changes per version. Bugfixes and internal refactors are
 intentionally summarized.
+
+## v1.1.15
+
+- F95 Updater now shows a one-time startup notice explaining that it is the
+  legacy F95-only app and linking users to Adult Game Manager's F95 thread and
+  APK download.
 
 ## v1.1.13
 
